@@ -19,7 +19,7 @@ for (let i of studentlist) {
 console.log("---------------------------------------------------------");
 
 // 2nd example:: test score
-
+console.log("Example 2: Searching for a high score in the test scores array");
 const testScores = [85, 92, 78, 90, 88];
 
 for (let score of testScores) {
@@ -29,9 +29,10 @@ for (let score of testScores) {
         break; // Exit the loop once a high score is found
     }
 }
+console.log("---------------------------------------------------------");
 
 // 3rd example: let go back to studentlist and add position tracker
-
+console.log("Example 3: Searching for Charlie and tracking his position in the student list");
 const studentlist2 = [
     { name: "Alice", age: 20 },
     { name: "Bob", age: 22 },
@@ -56,4 +57,23 @@ else {
     console.log("Charlie was not found in the student list.");
 }
 
+console.log("---------------------------------------------------------");
 
+// 4th example: tracking obj focus
+console.log("Example 4: Searching for an employee in the IT department and tracking the search process");
+const employees = [
+    { name: "Emily", department: "HR" },
+    { name: "James", department: "IT" },
+    { name: "Sophia", department: "Finance" },
+    { name: "Michael", department: "Marketing" }
+];
+
+for (let employee of employees) {
+    console.log(`Checking employee: ${employee.name} in ${employee.department} department`);
+    if (employee.department === "IT") {
+        console.log(`Found an employee in the IT department: ${employee.name}`);
+        // break; // Exit the loop once an employee in the IT department is found
+    }
+}
+
+console.log("---------------------------------------------------------");
